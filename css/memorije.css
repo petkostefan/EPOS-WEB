@@ -70,3 +70,12 @@ h1{
   .okreni{
     transform: rotateY(180deg);
   }
+
+@media only screen and (max-width: 700px) {
+  .igra{
+
+    grid-template-rows: 16.66% 16.66% 16.66% 16.66% 16.66% 16.66%;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+    grid-gap: 10px;
+  }
+}
