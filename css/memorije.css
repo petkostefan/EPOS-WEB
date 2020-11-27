@@ -33,6 +33,10 @@ h1{
     height: 100%;
 }
 
+.pogodjen{
+  opacity: 0.6;
+}
+
 /* FLIP CARD */
 .flip-card-inner {
     position: relative;
@@ -43,10 +47,6 @@ h1{
     transform-style: preserve-3d;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   }
-  
-  /* .flip:hover .flip-card-inner {
-    transform: rotateY(180deg);
-  } */
   
   .flip-card-front, .flip-card-back {
     position: absolute;

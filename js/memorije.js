@@ -1,34 +1,3 @@
-
-// function klik(){
-//     document.getElementById("1").style = "transform: rotateY(180deg);"
-//     brojac++;
-//     if(brojac==2){
-//         brojac = 0;
-//         document.getElementById("1").style = ""
-//     }  
-// }
-
-// var karte = document.getElementsByClassName("flip");
-
-// // Inicijalizacija
-// for (let i = 0; i < karte.length; i++) {
-//     karte[i].addEventListener("click", flip(karte[i]))
-// }
-
-// function flip(karta){
-//     var brojac = 0;
-//     var karta1;
-//     var karta2;
-//     karta.style = "transform: rotateY(180deg);"
-//     if(brojac<2){
-
-//     }else{
-//         for (let i = 0; i < karte.length; i++) {
-//             karte[i].id
-//         }
-//     }
-// }
-
 const cards = document.querySelectorAll(".flip-card-inner");
 
 let okrenuta = false;
@@ -38,6 +7,14 @@ let rezultat = 0;
 let pokusaji = 0;
 let rez = document.getElementById("rezultat");
 let pok = document.getElementById("pokusaji");
+
+
+// Random
+for(var i = 0; i < cards.length; i++){
+  var target = Math.floor(Math.random() * cards.length -1) + 1;
+  var target2 = Math.floor(Math.random() * cards.length -1) +1;
+  cards[target].before(cards[target2]);
+}
 
 function okreni() {
   if (zakljucano) return;
@@ -67,6 +44,10 @@ function proveri() {
 function zakljucaj() {
   prva.removeEventListener('click', okreni);
   druga.removeEventListener('click', okreni);
+
+  // Blurovanje
+  prva.children[1].classList.add('pogodjen');
+  druga.children[1].classList.add('pogodjen');
   rezultat++;
   rez.innerHTML = "Rezultat je: "+rezultat 
 
@@ -85,13 +66,13 @@ function vratiNaPocetno() {
 function resetBoard() {
   [okrenuta, zakljucano] = [false, false];
   [prva, druga] = [null, null];
-}
 
-// + (function shuffle() {
-// +   cards.forEach(card => {
-// +     let ramdomPos = Math.floor(Math.random() * 12);
-// +     card.style.order = ramdomPos;
-// +   });
-// + })();
+  // Kraj
+  if(rezultat==9){
+    setTimeout(() => {
+      alert("Bravo!!! Pobedili ste u: "+pokusaji+" pokusaja!")
+    }, 1000);
+  }
+}
 
 cards.forEach(card => card.addEventListener('click', okreni));
