@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="css/pocetna.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="css/pocetna.css">
+    <link rel="stylesheet" href="css/igricaKlik.css"> 
 </head>
-
 <body>
     <div id="particles-js"></div>
+
     <div class="meni">
         <p><a href="index.html">Početna</a></p>
         <p><a href="memorije.html">Igra memorije</a></p>
@@ -29,27 +29,36 @@
           </div> 
     </div>
 
-    <h1 class="naslov">Dobro došli na sajt "Kratke igre"</h1>
-    <div class="opis">
-    <h2>Na ovom sajtu se možete zabaviti dok čekate u redu,pravite pauzu</h2> 
-    <h2>u učenju ili radu, ili Vam je jednostavno potrebno malo razonode</h2>
-    </div>
-    <h1 class="naslov">Trenutno dostupne igre:</h1>
-    <div class="igre">
-        <div class="igra"><a href="memorije.html"><img src="images/memorije.jpg" alt=""></a>
-        <h2>Igra memorije</h2>
+    <div class="conteiner">
+        
+
+        <div class="tajmer">
+
+            <p id="vreme">Vreme: </p>
+            <p id="brSek">10</p>
+            <p id="s">s</p>
         </div>
-        <div class="igra"><a href="memorije.html"><img src="images/memorije.jpg" alt=""></a>
-        <h2>Igra reakcije</h2>
-        </div></a>
-        <div class="igra"><a href="memorije.html"><img src="images/memorije.jpg" alt=""></a>
-        <h2>Igra brzine</h2>
-        </div></a>
+
+        <div class="start" >
+            <button id="start">START</button>
+        </div>
+
+        <div class="dugme">
+        <button id="btn"  onclick="brojanje()">KLIKNI</button>
+        </div>
+
+
+        <div class="brojac">
+
+            <p>Broj klikova: </p>
+            <p id="broj">0</p>
+
+        </div>
     </div>
-    
-    <script src="js/pocetna.js"></script>    
+
+    <script src="js/igricaKlik.js"></script>
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script src="js/particles.js"></script>
+    <script src="js/pocetna.js"></script>    
 </body>
-
 </html>

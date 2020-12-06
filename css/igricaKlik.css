@@ -1,0 +1,33 @@
+
+.conteiner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+}
+
+#start, #btn {
+    font-family: 'Roboto', sans-serif;
+    font-size: 50px;
+    text-decoration: none;
+    color: white;
+    border: solid white;
+    background-color: #b61924;
+    border-radius: 20px;
+    padding: 35px;
+}
+
+.brojac {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    color: white;
+    font-size: 35px;
+}
+
+.tajmer {
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    display: flex;
+    font-size: 35px;
+}

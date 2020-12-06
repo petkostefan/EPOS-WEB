@@ -3,9 +3,10 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="css/pocetna.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="css/pocetna.css">
+    <link rel="stylesheet" href="css/igricaReakcije.css">
 </head>
 
 <body>
@@ -26,30 +27,23 @@
             <a href="igricaReakcije.html">Igra reakcije</a>
             <a href="igricaKlik.html">Igra brzine</a>
             <a href="upitnik.html">Upitnik</a>
-          </div> 
-    </div>
-
-    <h1 class="naslov">Dobro došli na sajt "Kratke igre"</h1>
-    <div class="opis">
-    <h2>Na ovom sajtu se možete zabaviti dok čekate u redu,pravite pauzu</h2> 
-    <h2>u učenju ili radu, ili Vam je jednostavno potrebno malo razonode</h2>
-    </div>
-    <h1 class="naslov">Trenutno dostupne igre:</h1>
-    <div class="igre">
-        <div class="igra"><a href="memorije.html"><img src="images/memorije.jpg" alt=""></a>
-        <h2>Igra memorije</h2>
         </div>
-        <div class="igra"><a href="memorije.html"><img src="images/memorije.jpg" alt=""></a>
-        <h2>Igra reakcije</h2>
-        </div></a>
-        <div class="igra"><a href="memorije.html"><img src="images/memorije.jpg" alt=""></a>
-        <h2>Igra brzine</h2>
-        </div></a>
     </div>
-    
-    <script src="js/pocetna.js"></script>    
+    <div class="sadrzaj">
+        <div id="igra" onclick="drugiKlik()">
+            <div id="text">
+                <h1>IGRA REAKCIJE</h1> <br>
+                <h3 id="tekst">kliknite ovde i sacekajte crvenu pozadinu</h3><br>
+            </div>
+            <div class="dugme">
+                <button id="btn" onclick="stop()">KLIKNI</button>
+            </div>
+        </div>
+    </div>
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script src="js/particles.js"></script>
+    <script src="js/igricaReakcije.js"></script>
+    <script src="js/pocetna.js"></script>
 </body>
 
 </html>
