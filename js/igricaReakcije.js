@@ -40,6 +40,6 @@ function stoperica(){
 }
 
 function stop(){
-    alert('vreme ' + miliSekunde)
+    alert('Vas rezultat: ' + miliSekunde)
 }
 //document.getElementById("igra").addEventListener("click", klik);
