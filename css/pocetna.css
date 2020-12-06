@@ -65,6 +65,7 @@ canvas{
     left: 0;
     background-color: #b61924;
     overflow-x: hidden;
+    white-space: nowrap;
     transition: 0.5s;
     padding-top: 60px;
   }
