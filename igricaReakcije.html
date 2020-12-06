@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/pocetna.css">
+    <link rel="stylesheet" href="css/igricaReakcije.css">
+</head>
+
+<body>
+    <div id="particles-js"></div>
+    <div class="meni">
+        <p><a href="index.html">Početna</a></p>
+        <p><a href="memorije.html">Igra memorije</a></p>
+        <p><a href="igricaReakcije.html">Igra reakcije</a></p>
+        <p><a href="igricaKlik.html">Igra brzine</a></p>
+        <p><a href="">Upitnik</a></p>
+    </div>
+    <div class="meniTelefon">
+        <button class="openbtn" onclick="openNav()">☰</button>
+        <div id="sidepanel" class="sidepanel">
+            <a href="#" class="closebtn" onclick="closeNav()">×</a>
+            <a href="index.html">Početna</a>
+            <a href="memorije.html">Igra memorije</a>
+            <a href="igricaReakcije.html">Igra reakcije</a>
+            <a href="igricaKlik.html">Igra brzine</a>
+            <a href="#">Upitnik</a>
+          </div> 
+    </div>
+    <div class="sadrzaj">
+        <div id="igra" onclick="drugiKlik()">
+            <div id="text">
+                <h1>IGRA REAKCIJE</h1> <br>
+                <h3 id="tekst">kliknite ovde i sacekajte crvenu pozadinu</h3><br>
+            </div>
+            <div class="dugme">
+                <button id="btn"  onclick="stop()">KLIKNI</button>
+                </div>
+
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js%22%3E"></script>
+    <script src="https://threejs.org/examples/js/libs/stats.min.js%22%3E"></script>
+    <script src="js/particles.js"></script>
+    <script src="js/igricaReakcije.js"></script>
+</body>
+
+</html>
