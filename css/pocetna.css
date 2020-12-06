@@ -3,16 +3,25 @@ html{
 }
 
 body{
+    text-shadow: 3px 2px 5px rgba(0, 0, 0, 0.726);
     margin: 0;
+    text-align: center;
+    color: white;
 }
+
 /* Particles */
 canvas{ 
     display: block; 
 }
 
+.naslov{
+    margin-top: 2em;
+    font-size: 40px;
+}
+
 #particles-js{ 
     z-index: -1;
-    position:absolute;
+    position: fixed;
     top: 0;
     left: 0; 
     width: 100vw; 
@@ -41,21 +50,114 @@ canvas{
     transition: .3s;
 }
 
+/* Meni telefon */
+.meniTelefon{
+    text-align: left;
+    display: none;
+}
+
+.sidepanel  {
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: #b61924;
+    overflow-x: hidden;
+    white-space: nowrap;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .sidepanel a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+  }
+  
+  .sidepanel .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+  }
+  
+  .openbtn {
+    font-size: 20px;
+    background: transparent;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+  }
+
+.igre{
+    display: flex;
+}
+
+.igre a{
+    color: white;
+    text-decoration: none;
+}
+
+.igra{
+    transition: 0.3s;
+    flex: 1;
+}
+
+.igra img{
+    width: 90%;
+    height: 90%;
+}
+
+.igra:hover{
+    flex: 1.2;
+}
+
 @media only screen and (max-width: 1200px) {
     .meni{
         font-size: 23px;
         margin-left: 5%;
         margin-right: 5%;
     }
+    .naslov{
+        margin-top: 1.5em;
+        font-size: 32px;
+    }
   }
 
 @media only screen and (max-width: 700px) {
-.meni{
-    margin-top: 10%;
-    font-size: 25px;
-    justify-content: flex-start;
-    align-items: center;
-    flex-direction: column;
-    display: none;
-}
+    body{
+        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.726);
+    }
+
+    .meni{
+        display: none;
+    }
+
+    .meniTelefon{
+        display: block;
+    }
+
+    .naslov{
+        font-size: 23px;
+    }
+
+    .opis{
+        font-size: 10px;
+    }
+
+    .igre{
+        flex-direction: column;
+    }
+
+    .igra{
+        padding-top: 25px;
+    }
+
+    .igre h2{
+        font-size: 15px;
+    }
 }

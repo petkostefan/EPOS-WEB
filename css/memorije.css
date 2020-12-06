@@ -1,5 +1,6 @@
 body{
   height: 100vh;
+  text-shadow: 3px 2px 5px rgba(0, 0, 0, 0.432);
 }
 
 .sadrzaj{
@@ -78,17 +79,16 @@ h1{
     grid-template-rows: 16.66% 16.66% 16.66% 16.66% 16.66% 16.66%;
     grid-template-columns: 33.33% 33.33% 33.33%;
     grid-gap: 10px;
-  }
-
-  .sadrzaj{
-    height: 90%;
+    padding: 0;
   }
 
   h1{
     font-size: 20px;
+    margin-top: 0;
   }
 
   h3{
     font-size: 15px;
+    margin: 0;
   }
 }
