@@ -3,7 +3,6 @@ document.getElementById('start').addEventListener("click", odbrojavanje);
 var sekunde = 10;
 
 function odbrojavanje(){
-    document.getElementById("start").disabled = true;
     setInterval( function(){
         sekunde--;
             
@@ -13,11 +12,9 @@ function odbrojavanje(){
         }
             
         if(sekunde === 0){
-            document.getElementById('vreme').innerHTML = "";
-            document.getElementById('s').innerHTML = "";
             document.getElementById('brSek').innerHTML = "Vreme je isteklo";
             alert("Vas rezultat je " + (funkcijaBrojanja()-1));
-            document.getElementById("btn").disabled = true;
+            
          }
      }, 1000);
 }
