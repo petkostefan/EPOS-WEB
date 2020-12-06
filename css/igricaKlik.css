@@ -1,33 +1,69 @@
 
+.igra {
+    display: grid;
+}
+
 .conteiner {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    height: 70vh;
+    align-items: center; 
+    height: 50vh;
+}
+
+.uputstvo {
+    font-family: 'Roboto', sans-serif;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+
+.prviRed{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; 
+}
+
+.drugiRed{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; 
 }
 
 #start, #btn {
     font-family: 'Roboto', sans-serif;
-    font-size: 50px;
+    font-size: 30px;
     text-decoration: none;
     color: white;
     border: solid white;
     background-color: #b61924;
     border-radius: 20px;
-    padding: 35px;
+    padding: 25px;
+    margin: 1em;
 }
 
 .brojac {
     font-family: 'Roboto', sans-serif;
     display: flex;
     color: white;
-    font-size: 35px;
+    font-size: 25px;
 }
 
 .tajmer {
     font-family: 'Roboto', sans-serif;
     color: white;
     display: flex;
-    font-size: 35px;
+    font-size: 25px;
+}
+
+#hr {
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    width: 50%;
+}
+
+h1{
+    font-size: 40px;
 }

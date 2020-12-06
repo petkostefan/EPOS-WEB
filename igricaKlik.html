@@ -29,32 +29,55 @@
           </div> 
     </div>
 
-    <div class="conteiner">
+    <div class="igra">
+        <div>
+            <h1>Igra brzine</h1>
+            <p class="uputstvo">Kako biste započeli igricu kliknite na dugme Start,<br>
+                a zatim klikćite na dugme Klikni što više puta. Kada istekne <br>
+                10 sekundi prikazaće se ostvaren rezultat.
+            </p>
+            <hr id="hr">
+        </div>
+
+       
+
+        <div class="conteiner">
+            <div class="prviRed">
+                <div class="start" >
+                    <button id="start">START</button>
+                </div>
+
+                <div class="tajmer">
+    
+                    <p id="vreme">Vreme: </p>
+                    <p id="brSek">10</p>
+                    <p id="s">s</p>
+                </div>
+            </div>
+
+            <div class="drugiRed">
+                
+                <div class="dugme">
+                    <button id="btn"  onclick="brojanje()">KLIKNI</button>
+                </div>
+
+                <div class="brojac">
+    
+                    <p>Broj klikova: </p>
+                    <p id="broj">0</p>
         
+                </div>
+    
+            </div>
 
-        <div class="tajmer">
-
-            <p id="vreme">Vreme: </p>
-            <p id="brSek">10</p>
-            <p id="s">s</p>
-        </div>
-
-        <div class="start" >
-            <button id="start">START</button>
-        </div>
-
-        <div class="dugme">
-        <button id="btn"  onclick="brojanje()">KLIKNI</button>
-        </div>
-
-
-        <div class="brojac">
-
-            <p>Broj klikova: </p>
-            <p id="broj">0</p>
-
+            
+            
+    
+    
+            
         </div>
     </div>
+    
 
     <script src="js/igricaKlik.js"></script>
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
