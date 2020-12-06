@@ -4,7 +4,6 @@ function validacija() {
     var ime = document.getElementById("name_surname").value;
     if (ime == "") {
         provera = false;
-
     }
     var mejl = document.getElementById("email").value;
     if (mejl == "") {
