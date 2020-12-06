@@ -36,7 +36,7 @@ function okreni() {
 
 function proveri() {
   pokusaji++;
-  pok.innerHTML = "  Broj pokusaja: "+pokusaji;
+  pok.innerHTML = "  Broj pokušaja: "+pokusaji;
   let isMatch = prva.id == druga.id;
   isMatch ? zakljucaj() : vratiNaPocetno();
 }
@@ -70,7 +70,7 @@ function resetBoard() {
   // Kraj
   if(rezultat==9){
     setTimeout(() => {
-      alert("Bravo!!! Pobedili ste u: "+pokusaji+" pokusaja!")
+      alert("Bravo!!! Pobedili ste u: "+pokusaji+" pokušaja!")
     }, 1000);
   }
 }
