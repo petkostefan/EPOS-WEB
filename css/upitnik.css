@@ -1,4 +1,11 @@
-
+.molba {
+    margin-top: 30px;
+    color: white;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
 .upitnik {
     font-size: 1.2em;
     height: 70%;
@@ -10,6 +17,7 @@
     justify-content: center;
     
 }
+
 label {
     padding-bottom: 30px;
 }
