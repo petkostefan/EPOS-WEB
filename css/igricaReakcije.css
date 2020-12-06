@@ -4,6 +4,9 @@
     height: 100%;
     width: 60%;
 }
+.sadrzaj h1 {
+    color: blue;
+}
 #igra{
 
     display: flex;
