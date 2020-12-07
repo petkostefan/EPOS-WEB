@@ -6,7 +6,9 @@
     <link rel="stylesheet" href="css/pocetna.css">
     <link rel="stylesheet" href="css/upitnik.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js" ></script>
+    <title>Upitnik</title>
 </head>
 
 <body>
@@ -36,7 +38,7 @@
             <label for="ime i prezime">Ime i prezime:</label><br>
             <input type="text" id="name_surname" name="ime"> <br><br>
             <label for="email">Email:</label><br>
-            <input type="text" id="email"> <br><br>
+            <input type="text" name="mejl" id="email"> <br><br>
             <label for="memorija">Koliko vam se svidela igra memorije?</label><br>
             <input type="radio" id="broj11" name="memorija" value="1">1
             <input type="radio" id="broj12" name="memorija" value="2">2
@@ -71,14 +73,13 @@
             <textarea id="komentar" rows="6" cols="90"></textarea><br><br>
            
                 <div class="button">
-                    <input type="submit" value="SAČUVAJ" onclick="validacija()">
+                    <button type="submit" value="SAČUVAJ">
                     <input type="reset" value="RESETUJ FORMU">
                 </div>
         </form>
     </div>
-   
-    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-    <script src="https://threejs.org/examples/js/libs/stats.min.js"></script>
+
+
     <script src="js/particles.js"></script>
     <script src="js/upitnik.js"></script>
     <script src="js/pocetna.js"></script>    
