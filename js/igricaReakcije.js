@@ -1,3 +1,5 @@
+document.getElementById("btn").disabled = true; 
+
 function cekanjeCrvene(){
     document.getElementById('tekst').innerHTML = "Sacekajte crvenu pozadinu";
     odbrojavanje();
@@ -15,7 +17,7 @@ function odbrojavanje(){
 var brojac = 0;
 
 function brojanje(){
-
+    document.getElementById("btn").disabled = false; 
     setInterval(brojac++, 100);    
 }
 
@@ -42,4 +44,3 @@ function stoperica(){
 function stop(){
     alert('Vas rezultat: ' + miliSekunde)
 }
-//document.getElementById("igra").addEventListener("click", klik);
