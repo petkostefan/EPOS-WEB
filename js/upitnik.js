@@ -64,10 +64,10 @@
         
           messages: {
             ime: {
-               required: "Molimo vas unesite vase ime",
-               minlength: "Ime mora biti minimum 3 karaktera"
+               required: "   Molimo vas unesite vase ime",
+               minlength: "   Ime mora biti minimum 3 karaktera"
             },
-            mejl: "Molimo Vas unesite email adresu pravilno"
+            mejl: "   Molimo Vas unesite email adresu pravilno"
           },
         
           submitHandler: function(form) {
