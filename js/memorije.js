@@ -37,8 +37,8 @@ function okreni() {
 function proveri() {
   pokusaji++;
   pok.innerHTML = "  Broj pokušaja: "+pokusaji;
-  let isMatch = prva.id == druga.id;
-  isMatch ? zakljucaj() : vratiNaPocetno();
+  let jednake = prva.id == druga.id;
+  jednake ? zakljucaj() : vratiNaPocetno();
 }
 
 function zakljucaj() {
