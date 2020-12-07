@@ -9,7 +9,7 @@ function odbrojavanje(){
     setInterval(function(){
         document.getElementById('igra').style.backgroundColor = '#b61924';
         stoperica();
-    }, (Math.random()*1000));
+    }, (Math.random()*10000));
 
     brojanje();
 }
@@ -21,12 +21,6 @@ function brojanje(){
     setInterval(brojac++, 100);    
 }
 
-var drugiKlik = false;
-
-function klik(){
-    drugiKlik = true;
-    alert('vreme: ' + brojac);
-}
 document.getElementById('igra').addEventListener("click", cekanjeCrvene);
 
 var miliSekunde = 0;
@@ -42,5 +36,6 @@ function stoperica(){
 }
 
 function stop(){
-    alert('Vas rezultat: ' + miliSekunde)
+    alert('Vas rezultat: ' + miliSekunde);
+    document.getElementById("btn").disabled = true; 
 }
